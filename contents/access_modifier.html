@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/java.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Cs<span class="notes">Notes</span>
+        </div>
+        <ul>
+            <li><a href="../index.html"><i class='bx bx-home-smile ico'></i></a><a class="ss"
+                    href="../index.html">Home</a>
+            </li>
+            <li><a href=""><i class='bx bx-cart-download ico'></i></a><a class="ss" href="#">DownNotes</a> </li>
+            <li><a href=""><i class='bx bxs-book-open ico'></i></a><a class="ss" href="#">Course</a> </li>
+            <li><a href=""><i class='bx bxs-user ico'></i></a><a class="ss" href="#">AboutUs</a> </li>
+        </ul>
+    </nav>
+    <!-- work start for sidebar menu  -->
+    <div class="menubar" id="bar">
+        <div class="top"></div>
+        <div class="mid"></div>
+        <div class="bottom"></div>
+
+    </div>
+    <!-- work  End for sidebar menu  -->
+    
+    <div class="javac">
+        <div class="java_menu">
+            <ul>
+                <li><a href="java.html">What is Java ?</a> </li>
+                <li><a href="jdk_jre.html">JDK & JRE</a> </li>
+                <li><a href="jvm.html">JVM & Working</a> </li>
+                <li><a href="bytecode.html">Java Byte Code</a> </li>
+                <li><a href="keycon.html">Java Keywords & constants</a></li>
+                <li><a href="variable.html">Java Variable</a> </li>
+                <li><a href="literals.html">Java Literals</a> </li>
+                <li><a href="datatype.html">Java Data Types</a> </li>
+                <li><a href="operators.html">Java Operators</a> </li>
+                <li><a href="exst.html">Java Expressions & Statements</a> </li>
+                <li><a href="control_flow.html">Control Flow In Java</a> </li>
+                <li><a href="classes.html">Java Classes</a> </li>
+                <li><a href="object.html">Java Objects</a> </li>
+                <li><a href="methods.html">Java Methods</a> </li>
+                <li><a href="inheritance.html">Java Inheritance</a> </li>
+                <li><a href="access_modifier.html">Java Access Modifiers</a> </li>
+                <li><a href="abstraction.html">Abstraction</a> </li>
+                <li><a href="ab.html">Abstact Class</a> </li>
+                <li><a href="interface.html">Interface In Java</a> </li>
+                <li><a href="packages.html">Java Packages & Basic types</a> </li>
+                <li><a href="exception.html">Java Exeptions & types</a> </li>
+                <li><a href="thread.html">Java Thread & Creation of Thread</a> </li>
+                <li><a href="r_interface.html">Runnable Interface</a> </li>
+                <li><a href="thread_lyf.html">Java Thread Model & life cycle</a> </li>
+                <li><a href="synchro.html">Thread Synchronisation</a> </li>
+                <li><a href="final.html">final Keyword</a> </li>
+                <li><a href="streams.html">Java I/O Streams & Types</a> </li>
+                <li><a href="wrapper_class.html">Wrapper Class</a> </li>
+
+
+            </ul>
+        </div>
+        <div class="java_notes">
+            <div>
+                <h2>Java Access Modifiers:</h2>
+                <p>In Java, access modifiers are used to set the accessibility (visibility) of classes, interfaces,
+                    variables, methods, constructors, data members, and the setter methods. For example,</p>
+
+                <img src="../src/access1.png" alt="error">
+
+                <p><strong>In the above example,</strong> we have declared 2 methods: <strong>method1() </strong> and
+                    <strong>method2().</strong> Here,</p>
+                <ul style="list-style: numbers;">
+                    <li><strong>method1() is public - </strong> This means it can be accessed by other classes.</li>
+                    <li><strong>method2() is private - </strong> This means it can not be accessed by other classes.
+                    </li>
+                    <p><strong>Note:</strong> the keyword public and 1. These are access modifiers in Java. They are
+                        also known as visibility modifiers.</p>
+                </ul>
+                <h2>Types of Access Modifier:</h2>
+                <p>There are four access modifiers keywords in Java and they are:</p>
+                <img src="../src/access2.png" alt="error">
+                <ul style="list-style: numbers;">
+
+                    <li>
+                        <h3><strong> Default Access Modifier:</strong></h3>
+                        <p>If we do not explicitly specify any access modifier for classes, methods, variables, etc,
+                            then by default the default access modifier is considered. For example,</p>
+                        <img src="../src/access3.png" alt="error">
+                        <p>Here, the Logger class has the default access modifier. And the class is visible to all the
+                            classes that belong to the defaultPackage package. However, if we try to use the Logger
+                            class in another class outside of defaultPackage, we will get a compilation error.</p>
+
+                    </li>
+
+                    <li>
+                        <h3><strong>Private Access Modifier:</strong></h3>
+                        <p>When variables and methods are declared private, they cannot be accessed outside of the
+                            class. For example,</p>
+                        <img src="../src/access4.png" alt="error">
+                        <p>In the above example, we have declared a private variable named name. When we run the
+                            program, we will get the error.
+
+                        </p>
+
+                    </li>
+
+                    <li>
+                        <h3><strong>Protected Access Modifier:</strong></h3>
+                        <p>When methods and data members are declared protected, we can access them within the same
+                            package as well as from subclasses. For example,</p>
+                        <img src="../src/access5.png" alt="">
+                        <h3>Output:</h3>
+                        <h3><strong style="color: red;">I am an animal</strong></h3>
+
+                    </li>
+
+                    <li>
+                        <h2><strong>Public Access Modifier:</strong></h2>
+                        <p>When methods, variables, classes, and so on are declared public, then we can access them from
+                            anywhere. The public access modifier has no scope restriction. </p>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+            <div class="jump_buttons_updated">
+                <!-- Add Print button by using JavaScript -->
+                <a style="cursor:pointer;" onclick="PrintFunction()">Print</a>
+                <script type="text/javascript">
+
+                    function PrintFunction() {
+                        window.print();
+                    }
+                </script>
+
+                <a href="inheritance.html">Pre</a>
+                <a href="abstraction.html">Next</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="quick">
+            <h1>Thanku! For Visiting</h1>
+            <ul class="quick_links">
+                <li><a href=""><i class='bx bx-home-smile ico'></i></a> </li>
+                <li><a href=""><i class='bx bx-cart-download ico'></i></a> </li>
+                <li><a href=""><i class='bx bxs-book-open ico'></i></a> </li>
+                <li><a href=""><i class='bx bxs-user ico'></i></a> </li>
+            </ul>
+        </div>
+        <div class="shear_maintainer">
+
+
+            <div class="shear">
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter  ico'></i></a>
+                <a href="https://www.instagram.com/accounts/login/"> <i class='bx bxl-instagram  ico'></i></a>
+                <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook-circle  ico'></i></a>
+            </div>
+
+            <div class="ms">
+
+                <div class="m-logo">
+                    <a href="https://github.com/Meenaji21" target="_blank"><img src="../src/footer/meena.png" alt="meena"></a>
+                    <a class="cs" href="https://github.com/sahil-sindwal" target="_blank"><img src="../src/footer/cs.png" alt="cs"></a>
+                </div>
+
+                <div class="dh">
+                    <h5>Designed By</h5>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyRight">
+            <h5>copyright <i class='bx bx-copyright'></i> 2022 CsNotes</h5>
+        </div>
+
+
+    </footer>
+
+
+</body>
+<script src="../script.js"></script>
+
+</html>

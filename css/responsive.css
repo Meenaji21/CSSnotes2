@@ -1,0 +1,148 @@
+@media screen and (max-width:960px) {
+
+    .wel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wel h1 {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .welcome {
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    nav ul li .ss {
+        display: none;
+
+    }
+
+    .ico {
+        padding: 0px 10px;
+    }
+
+    .ico:hover {
+        scale: 150%;
+        color: rgb(221, 85, 85);
+        transition: 0.5s;
+    }
+
+    .coursebook {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        height: 100%;
+
+    }
+
+    .Course_btn {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    /***************** For Java.html****/
+
+    .java_notes {
+        max-width: 100%;
+        height: 90%;
+
+    }
+
+
+    /********* Work for sidebar menu****/
+    .javac {
+        flex-direction: column;
+
+    }
+
+    .java_menu {
+        display: none;
+        width: 100%;
+    }
+
+    .mc {
+        display: block;
+    }
+
+    .menubar {
+        border-radius: 5px;
+        position: absolute;
+        top: 6.6rem;
+        z-index: 111;
+        margin-top: 0.1rem;
+        margin-left: 0.1rem;
+        display: inline-block;
+        box-shadow: 0.2vw 0.2vw 0.7vw 0.2vw rgb(221, 134, 221);
+    }
+
+    .top,
+    .mid,
+    .bottom {
+        width: 32px;
+        height: 4px;
+        background-color: rgb(209, 78, 192);
+        margin: 6px 6px;
+        transition: 0.5s;
+
+    }
+
+    /* Rotate first bar */
+    .close .top {
+        transform: translate(0, 10px) rotate(-44deg);
+    }
+
+    /* Fade out the second bar */
+    .close .mid {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .close .bottom {
+        transform: translate(0, -10px) rotate(44deg);
+    }
+
+
+}
+
+
+/************Specifying Print Area****/
+
+@media print {
+
+    .java_menu,
+    .jump_buttons_updated,
+    footer,
+    nav ul {
+
+        display: none;
+    }
+
+    /*********footer work ****/
+
+
+
+}
+
+
+
+@media screen and (max-width:584px) {
+
+    .copy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .policy {
+        margin-bottom: 0.4rem;
+    }
+
+    .main {
+        height: 270px;
+    }
+
+}
