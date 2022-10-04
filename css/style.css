@@ -378,6 +378,11 @@ footer i:hover {
     scale: 170%;
     transition: 0.5s;
 }
+/* by sm */
+.Follow{
+    color: #f4f9fa;
+    text-align: center;
+}
 
 
 /* copyright & designed heading */
